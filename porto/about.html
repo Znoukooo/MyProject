@@ -1,0 +1,248 @@
+<?php
+  $current_page = basename($_SERVER['PHP_SELF']);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Khaisan</title>
+  <link rel="shortcut icon" type="image/png" href="img/icon.jpg">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <style>
+      body {
+      background-color: #F4F8FB;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .line{
+        width: 100%;
+        height: 2px;
+        background-color: #70A44D;
+    }
+
+    span h1{
+        color: #70A44D;
+        font-weight: 600;
+    }
+    span p{
+        font-weight: 500;
+        color:rgb(102, 103, 103);
+    }
+    .gallery-img{
+        cursor: pointer;
+    }
+    .card-gallery {
+  overflow: hidden;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.card-gallery:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-gallery img {
+  transition: transform 0.3s ease;
+}
+
+.card-gallery:hover img {
+  transform: scale(1.05);
+}
+.table-borderless tbody tr td {
+  background-color: transparent !important;
+  color: rgb(102, 103, 103);
+}
+.bg{
+  background-color: #1B1B1B;
+
+}
+
+  </style>
+</head>
+<body>
+    
+  <div id="navbar-placeholder"></div>
+
+<div class="container w-100 my-5">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <span>
+                    <h1>About Page</h1>
+                    <p style="text-align: justify;">Hello, I am Khaisan, a student at Pamulang University who is currently studying web programming and system development.</p>
+                </span>
+                <div class="line my-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+  <div class="row">
+    <div class="col-lg-6 col-md-12">
+      <table class="table table-borderless mb-0">
+        <tbody>
+          <tr>
+            <td class="fw-semibold text-secondary">Full Name</td>
+            <td>: Khaisan Ramzi Muzhaffar</td>
+          </tr>
+          <tr>
+            <td class="fw-semibold text-secondary">ID</td>
+            <td>: 241011400049</td>
+          </tr>
+          <tr>
+            <td class="fw-semibold text-secondary">Campus</td>
+            <td>: Pamulang University</td>
+          </tr>
+          <tr>
+            <td class="fw-semibold text-secondary">Major</td>
+            <td>: Informatics Engineering</td>
+          </tr>
+          <tr>
+            <td class="fw-semibold text-secondary">Interest</td>
+            <td>: Web Development, UI/UX Design</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-lg-6 col-md-12">
+      <table class="table table-borderless mb-0">
+        <tbody>
+          <tr>
+            <td class="fw-semibold text-secondary">Skill</td>
+            <td>: HTML, CSS, JavaScript, PHP, Bootstrap, Laravel</td>
+          </tr>
+          <tr>
+            <td class="fw-semibold text-secondary">Education</td>
+            <td>: elementary school - vocational school - college</td>
+            
+          </tr>
+          <tr>
+            <td class="fw-semibold text-secondary">Hobby</td>
+            <td>: Writing code, designing interfaces, photography, traveling, automotive, badminton</td>
+          </tr>
+          <tr>
+            <td class="fw-semibold text-secondary">Quotes</td>
+            <td>: Keep learning, keep growing.</td>
+          </tr>
+         
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/carousel1.jpg" class="d-block w-100" alt="img/carousel1.jpg">
+    </div>
+    <div class="carousel-item">
+      <img src="img/carousel2.jpg" class="d-block w-100" alt="img/carousel2.jpg">
+    </div>
+    <div class="carousel-item">
+      <img src="img/carousel3.jpg" class="d-block w-100" alt="img/carousel3.jpg">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+<div class="bg p-2">
+<div class="container">
+<div class="container my-5">
+  <h2 class="my-2 text-center" style="color: #F4F8FB;">Gallery</h2>
+  <p class="my-2 text-center" style="color: rgb(102, 103, 103);">-- This is my photo --</p>
+  <div class="line my-4"></div>
+  <div class="row g-4">
+    <div class="col-6 col-md-4 col-lg-3">
+    <div class="card-gallery">
+      <img src="img/IMG_20241122_183655_568.jpg" class="img-fluid rounded shadow-sm gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Gallery Image 1">
+    </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+    <div class="card-gallery">
+      <img src="img/IMG_20240922_173705_853.jpg" class="img-fluid rounded shadow-sm gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Gallery Image 2">
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+    <div class="card-gallery">
+      <img src="img/IMG_20241119_202106_191.jpg" class="img-fluid rounded shadow-sm gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Gallery Image 2">
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+    <div class="card-gallery">
+      <img src="img/IMG_20241227_211649_717.jpg" class="img-fluid rounded shadow-sm gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Gallery Image 2">
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+    <div class="card-gallery">
+      <img src="img/IMG_20240910_113124_182.jpg" class="img-fluid rounded shadow-sm gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Gallery Image 2">
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+    <div class="card-gallery">
+      <img src="img/IMG_20240711_211826_898.jpg" class="img-fluid rounded shadow-sm gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Gallery Image 2">
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+    <div class="card-gallery">
+      <img src="img/IMG_20240708_102927_150.jpg" class="img-fluid rounded shadow-sm gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Gallery Image 2">
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+    <div class="card-gallery">
+      <img src="img/IMG-20240527-WA0389.jpg" class="img-fluid rounded shadow-sm gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal" alt="Gallery Image 2">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="" class="img-fluid rounded" id="modalImage" alt="Preview Image">
+    </div>
+  </div>
+</div>
+
+</div>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+  const galleryImages = document.querySelectorAll('.gallery-img');
+  const modalImage = document.getElementById('modalImage');
+
+  galleryImages.forEach(img => {
+    img.addEventListener('click', function () {
+      modalImage.src = this.src;
+    });
+  });
+
+  fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar-placeholder').innerHTML = data;
+    });
+</script>
+
+</body>
+</html>
